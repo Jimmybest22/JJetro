@@ -1,0 +1,1356 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face{
+    font-family: Bebas;
+    src: url("../fonds/BEBAS.ttf")
+}
+
+/*The Menu */
+header{
+    margin: 0px;
+}
+
+.menugrid {
+    display: grid;
+    grid-template-columns: 15% 40% 40% 15%;
+    grid-template-rows: 1fr;
+}
+
+
+.Jetro {
+    font-family: Bebas;
+    grid-column: 2;
+    padding-left: 10px;
+}
+
+h1{
+    color: #F5740B; 
+}
+
+.ro{
+    color: #FF6060;
+}
+
+.menu {
+    grid-column: 3;
+    font-family: Bebas;
+}
+
+ul {
+    list-style-type: none;
+    margin: 35px;
+    padding: 0px;
+    color: black;
+}
+
+li {
+    float: left;
+    font-size: 115%;
+}
+
+li a {
+    display: block;
+    color: #8B8A8C;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #F5740B;
+}
+
+
+
+/*The home Page*/
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 10px;
+}
+
+.side{
+    height: 7%;
+    background: #FF6060;
+    width: 90%;
+}
+
+.bigimg{
+    background-image: url("../img/jetro/home.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 28%;
+    width: 99%;
+    padding-top: 1px;  
+    margin-bottom: 10px;
+}
+
+.bigimgtext{
+    font-family: Bebas;
+}
+
+.imgtext{
+    margin-right: 52%;
+    margin-left: 5%;
+    margin-top: 17%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    color: white;
+    background-color:rgba(255,69,0,0.7);
+}
+
+.siximg{
+    display: flex;
+    grid-gap: 78px;
+}
+
+.flexboximg{
+    height: 118%;
+    width: 185%;
+}
+
+.info{
+    display: flex;
+    grid-gap: 8%;
+    margin-top: 7%;
+}
+
+.morebutton{
+    font-family: Bebas;
+    font-size: 86%;
+    background-color: #F5740B;
+    color: white;
+    margin-right: 85%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.infoimg{
+    float: left;
+    height: 23%;
+    width: 16%;
+}
+
+.infotext{
+    font-family: Bebas;
+    font-size: 110%;
+    color: #F5740B;
+    padding-bottom: 11%;
+}
+
+.recent{
+    margin-top: 4%;
+    background-image: url(../img/jetro/jetro_streepjes.jpg);
+    color: #F5740B;
+    background-repeat: repeat-x;
+    background-position-y: 53%;
+    background-size: 27%;
+}
+
+.recent h2{
+    font-family: Bebas;
+    font-size: 150%;
+    display: inline-block;
+    background-color: white;
+    padding-right: 2%;
+}
+
+.recentimg{ 
+    font-family: Bebas;
+    display: flex; 
+    grid-gap: 80px;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.fourimg{
+    width: 140%;
+    height: 71%;
+}
+
+.fourimgtitle{
+    color: grey;
+    font-size: 112%;
+}
+
+.fourimgtext{
+    color: #F5740B;  
+}
+
+.fourall{
+    border: 1px solid;
+    border-color: #C8C4C4;
+    width: 137%;
+}
+
+/* Portofolio*/
+.titlebar{
+    display: flex;
+    background-color: #F5740B;
+    font-family: Bebas;
+    font-size: 150%;
+    padding: 1%;
+    color: white;
+    height: 3em;
+}
+
+.portofoliomenu{
+    font-family: Bebas;
+    color: grey;
+    word-spacing: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.allselected{
+    background-color: #EE7D45;
+    color: white;
+    padding: 5px;
+}
+
+.recentimg2{
+    font-family: Bebas;
+    display: flex; 
+    grid-gap: 106px;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.fourimg2{
+    width: 161%;
+    height: 71%;
+}
+
+.recentimg3{
+    font-family: Bebas;
+    display: flex; 
+    grid-gap: 105px;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.fourimg3{
+    width: 155%;
+    height: 71%; 
+}
+
+.fourall2{
+    border: 1px solid;
+    border-color: #C8C4C4;
+    width: 157%;
+}
+
+/* contact us */
+
+.kaartimg{
+    float: left;
+    height: 42%;
+    width: 66%;
+}
+
+.aboutext{
+    display: flex;
+}
+
+.sidetitle{
+    margin-top: 15px;
+    background-image: url(../img/jetro/jetro_streepjes.jpg);
+    font-size: 148%;
+    color: #F5740B;
+    background-repeat: repeat-x;
+    background-position-y: 53%;
+    background-size: 55%;
+}
+
+.sidetitle2{
+    margin-top: 15px;
+    background-image: url(../img/jetro/jetro_streepjes.jpg);
+    font-size: 148%;
+    color: #F5740B;
+    background-repeat: repeat-x;
+    background-position-y: 54%;
+    background-size: 25%;
+}
+
+.sidetitle h2{
+    font-family: Bebas;
+    font-size: 65%;
+    display: inline-block;
+    background-color: white;
+    padding-right: 1%;
+    padding-bottom: 1px;
+}
+
+.sidetitle2 h2{
+    font-family: Bebas;
+    font-size: 65%;
+    display: inline-block;
+    background-color: white;
+    padding-right: 1%;
+    padding-bottom: 1px;
+}
+
+.sidetext{
+    margin-top: 1%;
+    font-size: 80%;
+}
+
+.sideopsomming{    
+    font-size: 65%;
+}
+
+.sideflex{
+    display: flex;
+    grid-gap: 10px;
+    padding-top: 1%;
+}
+
+.square{
+    height: 60px;
+    width: 21%;
+    background-color: #FF6060;
+    border: 2px solid;
+    color: #EF2020;
+}
+
+.submitflex{
+    display: flex;
+}
+
+.submitinfo1{
+    font-family: Bebas;
+    border: 2px solid;
+    padding-right: 15%;
+    margin-right: 54%;
+    margin-top: 2%;
+    height: 35px;
+    color: #EE7D45;
+}
+
+.submitinfo2{
+    font-family: Bebas;
+    border: 2px solid;
+    padding-right: 15%;
+    margin-left: 23%;
+    margin-top: -6%;
+    height: 35px;
+    color: #EE7D45;
+}
+
+.submittext1{
+    margin-top: 1%;
+    color: #EE7D45;
+}
+
+.submittext2{
+    margin-top: 1%;
+}
+
+.submitinfo3{
+    font-family: Bebas;
+    border: 2px solid;
+    padding-right: 12%;
+    margin-left: 23%;
+    margin-top: -16%;
+    height: 35px;
+    color: #EE7D45;
+}
+
+.submitinfo4{
+    font-family: Bebas;
+    border: 2px solid;
+    padding-right: 14%;
+    margin-left: 23%;
+    margin-top: -22%;
+    height: 250px;
+    width: 29%;
+    color: #EE7D45;
+}
+
+.submitbutton{
+    font-family: Bebas;
+    background-color: #EE7D45;
+    color: white;
+    margin-right: 71%;
+    margin-left: 23%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+/* About */
+
+.abouttext{
+    margin-top: 1%;
+    width: 230%
+}
+
+.abouttextp{
+    margin-right: 7%
+}
+
+.manimgtext{
+    margin-top: 3%;
+}
+
+.manimg{
+    float: left;
+    margin-right: 2%;
+}
+
+.mantext{
+    margin-right: 7%
+}
+
+.abouttextp2{
+    margin-right: 7%;
+    margin-top: 3%
+}
+
+.bigD{
+font-size: 2em;
+float: left;
+color: #F5740B;
+margin-top: -9%;
+}
+
+.abouttextp3{
+    margin-right: 7%;
+    margin-top: 3%;
+    font-style: italic;
+}
+
+.square2{
+    height: 4em;
+    width: 1%;
+    background-color: #F5740B;
+    float: left;
+    margin-left: 5%;
+    margin-right: 2%
+}
+
+.aboutflex{
+    display: flex;
+    grid-gap: 4%;
+    margin-top: 3%
+}
+
+.Alertbox1{
+    margin-top: 1%;
+    border: 1px solid;
+    height: 3%;
+    padding-top: 2%;
+    background-color: #8CED0E;
+    color: #1EFB07;
+    border-color: #1EFB07;
+    text-align: center;
+}
+
+.Alertbox2{
+    margin-top: 1%;
+    border: 1px solid;
+    height: 3%;
+    padding-top: 2%;
+    background-color: #EE0A4A;
+    color: #FB0707;
+    border-color: #FB0707;
+    text-align: center;
+}
+
+.Alertbox3{
+    margin-top: 1%;
+    border: 1px solid;
+    height: 3%;
+    padding-top: 2%;
+    background-color: #F5B509;
+    color: #FB9707;
+    border-color: #FB9707;
+    text-align: center;
+}
+
+.Alertbox4{
+    margin-top: 1%;
+    border: 1px solid;
+    height: 3%;
+    padding-top: 2%;
+    background-color: #0AC6EE;
+    color: #4C07FB;
+    border-color: #4C07FB;
+    text-align: center;
+}
+
+.totalflex{
+    display: flex;
+}
+
+/* Blog */
+.side2{
+    height: 3%;
+    background: #FF6060;
+}
+
+.blogimg{
+    height: 17em;
+}
+
+.blogflex{
+    display: flex;
+    margin-top: 3%
+}
+
+.orangetext{
+    font-family: Bebas;
+    color: #EE7D45;
+    margin-top: 5%;
+}
+
+.greytext{
+    color: grey;
+    margin-top: 5%;
+}
+
+.blogtitle{
+    color: #EE7D45;
+    font-family: Bebas;
+    font-size: 1em;
+}
+
+.blogtitles{
+    margin-left: 5%;
+    margin-right: 6%;
+}
+
+.blogtext{
+    margin-top: 5%;
+}
+
+.stripes{
+    height: 20px;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+
+.blogimg2{
+    height: 17em;
+    margin-top: 10%
+}
+
+.write{
+    width: 100%;
+}
+
+.littleimg1{
+    height: 70%;
+    margin-top: 51%;
+    float: right;    
+}
+
+.littleimg2{
+    height: 70%;
+    margin-top: 364%;
+    margin-right: -25%;
+    float: right;
+}
+
+.littleimg3{
+    height: 70%;
+    margin-top: 682%;
+    margin-right: -25%;
+    float: right;
+
+}
+
+.littleimg4{
+    height: 70%;
+    margin-top: 967%;
+    margin-right: -25%;
+    float: right;
+}
+
+.littleimg5{
+    height: 70%;
+    margin-top: 1042%;
+    margin-right: -25%;
+    float: right;
+}
+
+.greytext2{
+    color: grey;
+    margin-bottom: 3%;
+    margin-right: -34%;
+ 
+}
+
+.alignflex{
+    display: flex;
+    grid-gap: 1%;
+}
+
+.summary{
+    color: white;
+    background-color: #EE7D45;
+    font-family: Bebas;
+    width: 3%;
+    text-align: center;
+}
+
+/* Slider plugin*/
+
+.bigslide{
+    width: 100%;
+}
+
+.slidertext{
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+/* Footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-gap: 1%;
+    padding-top: 7%;
+}
+
+.footersides{
+    background-color: #FF6060;
+    width: 87%;
+}
+
+.footerflex{
+ display: flex;
+ grid-gap: 3%;
+ background-color: #EE7D45;
+}
+
+.footertext{
+    color: white;
+    margin-top: 4%;
+    margin-left: 3%;
+    width: 26%;
+}
+
+.footerh2{
+    font-family: Bebas;
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+
+.footertext1{
+    margin-bottom: 2%;
+}
+
+.footertext2{
+    color: #EE7D45;
+}
+
+.footertext3{
+    color: #FF6060;
+}
+
+.footertext4{
+    color: #FF6060;
+    margin-bottom: 2%;
+}
+
+.widgetimgs{
+    display: flex;
+    grid-gap: 1%;
+}
+
+.widgetimg{
+    width: 100%;
+    height: 40px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1088px){
+    /* header */
+    header .menugrid{
+        display: flex;
+        flex-direction: column;
+    }
+       
+    .Jetro h1{
+        padding-left: 45%;
+    }
+
+    .menu{
+        padding-left: 30%
+    }
+    /* Home */
+
+    .bigimg{
+        width: 100%;
+    }
+
+    .imgtext{
+        margin-top: 14%;
+        margin-right: 10%;
+    }
+    
+    .siximg{
+        margin-left: 8%;
+    }
+    
+    .flexboximg{
+        width: 155%;
+    }
+
+    .info{
+        grid-gap: 6%;
+        margin-top: 6%;
+        margin-left: 4%;
+    }
+
+    .recent h2{
+        font-size: 24px;
+    }
+
+    .fourimg{
+        width: 103%;
+    }
+
+    .fourall{
+        width: 99%;
+    }
+
+    /* contact */
+    .maincontent{
+        display: flex;
+        flex-direction: column;
+        width: 667%;
+    }
+
+    .sidebar{
+        align-content: right
+    }
+
+    .submitflex{
+        margin-top: 4%
+    }
+
+    .submitinfo1{
+        /*padding-right: 17%;
+        margin-right: 8%;*/
+        display: none;
+    }
+
+    .submitinfo2{
+        /*padding-right: 17%;
+        margin-left: 62%;
+        margin-top: -4%;*/
+        display: none;
+    }
+
+    .submitinfo3{
+        /*margin-left: 62%;
+        margin-top: -29%;*/
+        display: none;
+    }
+
+    .submitinfo4{
+        /*margin-left: 61%;
+        margin-top: -30%;
+        height: 5em;
+        width: 16%;*/
+        display: none;
+    }
+
+    .submitbutton{
+    /*margin-bottom: 30%;*/
+    display: none;
+    }
+
+    /* Portfolio */
+    .portofoliomenu{
+        margin-left: 7% 
+    }
+    
+    .fourimg2{
+        width: 112%;
+    }
+
+    .fourimg3{
+        width: 112%;
+    }
+
+    .fourall2{
+        width: 110%;
+    }
+
+    .recentimg{
+        margin-left: 7%;
+    }
+
+    .recentimg2{
+        margin-left: 7%;
+    }
+
+    .recentimg3{
+        margin-left: 7%;
+    }
+
+    /* About */
+    .Alertbox4{
+        margin-bottom: 25%;
+    }
+
+    /* Blog */
+    .alignflex{
+        margin-bottom: 5%;
+    }
+
+    .bigD{
+        margin-top: -7%;
+    }
+    
+    /* slider plugin */
+    .recent{
+        margin-left: 7%;
+    }
+
+    /* Footer */ 
+    footer{
+        width: 666%;
+        padding-top: 0%;
+    }
+
+    .footerh2{
+        font-size: 150%;
+    }
+
+    .footersides{
+        display: none;
+    }
+    
+    .side{
+    display: none;
+}
+
+    .side2{
+    display: none;
+}
+
+}
+
+    @media screen and (max-width: 986px){
+    .flexboximg{
+        width: 119%;
+        margin-left: 0%;
+    }
+
+    .siximg{
+        grid-gap: 65px;
+    }
+
+    .blogimg{
+        display: none;
+    }
+
+    .blogimg2{
+        display: none;
+    }
+    /*Portfolio*/
+
+    }
+
+    @media screen and (max-width: 891px){
+    .sidetitle{
+        font-size: 140%;
+    }
+
+    .sidetitle h2{
+        font-size: 70%;
+    }
+
+    .sidetitle2{
+        font-size: 140%;
+    }
+
+    .sidetitle2 h2{
+        font-size: 70%;
+    }
+
+    .siximg{
+        grid-gap: 10%;
+    }
+
+    .flexboximg {
+        width: 115%;
+    }
+
+    .morebutton{
+        margin-right: 77%;
+    }
+
+    .infotext{
+        font-size: 100%;
+    }
+
+    .infoimg{
+        height: 16%;
+        margin-top: 3%;
+    }
+
+    .recent h2 {
+        font-size: 100%;
+    }
+
+    .fourimg2{
+        width: 100%;
+    }
+
+    .fourall2{
+        width: 136%;
+    }
+
+    .recentimg2{
+        grid-gap: 80px;
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
+
+    .fourimg3{
+        width: 103%;
+    }
+
+    .recentimg3{
+        margin-bottom: 20%;
+    }
+
+    .fourimgtext{
+        font-size: 48%;
+    }
+
+    @media screen and (max-width: 621px) {
+    /* menu */
+    .Jetro h1{
+        padding-left: 40%;
+    }
+
+    .menu{
+        padding-left: 16%;
+    }
+
+    .menu ul li {
+        font-size: 95%;
+    }
+
+    .recentimg{
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+
+    /* home */
+    .info{
+        font-size: 70%;
+    }
+
+    .morebutton{
+        margin-right: 58%;
+    }
+
+    .infoimg{
+        height: 19%;
+        width: 22%;
+    }
+
+    .infotext{
+        font-size: 11px;
+    }
+
+    .recent{
+        margin-left: 0%;
+    }
+
+    .recent h2 {
+        font-size: 100%;
+    }
+
+    .recentimg{
+        grid-gap: 24px;
+    }
+
+    .fourimg{
+        width: 94%;
+        height: 36%;
+    }
+
+    .fourimgtitle{
+        font-size: 80%;
+    }
+
+    /* About */
+    .Alertbox1{
+        height: 2%;
+    }
+
+    .Alertbox2{
+        height: 2%;
+    }
+
+    .Alertbox3{
+        height: 2%;
+    }
+
+    .Alertbox4{
+        height: 2%;
+    }
+    
+    /*portfolio */
+
+    .fourimgtitle{
+        font-size: 70%;
+    }
+
+    .fourimg2{
+    width: 100%;
+    }
+
+    .fourall2{
+        width: 97%;
+    }
+
+    .recentimg2{
+        grid-gap: 25px;
+        padding-bottom: 20%;
+        padding-top: 5%;
+        margin-left: 0%;
+    }
+
+    .fourimg3{
+        width: 103%;
+    }
+
+    .recentimg3{
+        margin-bottom: 20%;
+        grid-gap: 25px;
+        margin-left: 0%;
+    }
+
+    }
+    @media screen and (max-width: 531px){
+    /* menu */
+    .menu ul li{
+        font-size: 75%;
+    }
+
+    /* home */
+    .imgtext{
+        margin-top: 9%;
+        margin-right: 0%;
+        font-size: 65%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+
+    .menu{
+        padding-left: 0%;
+    }
+
+    /* about */
+    .manimg{
+        width: 47%;
+    }
+
+    .square2{
+        height: 11em;
+    }
+
+    .Alertbox4{
+        margin-bottom: 70%;
+    }
+
+    /*Blog */
+    .summary{
+        width: 7%;
+    }
+}
+
+@media screen and (max-width: 330px){
+    /*Menu */
+    .menu ul li{
+        font-size: 65%;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
